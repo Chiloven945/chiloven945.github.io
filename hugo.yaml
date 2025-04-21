@@ -14,19 +14,19 @@ hasCJKLanguage: true
 
 languages:
     en:
-        languageName: English
+        languageName: English (UK)
         title: Chiloven's Blog
         weight: 1
         params:
             sidebar:
-                subtitle: 那是缅邈的熙來攘往，車與船于情亦感。
+                subtitle: 那昰緬邈旳熙來攘往，車與船於情亦感。
     zh-cn:
-        languageName: 中文
+        languageName: 简体中文（中国大陆）
         title: Chiloven's Blog
         weight: 2
         params:
             sidebar:
-                subtitle: 那是缅邈的熙來攘往，車與船于情亦感。
+                subtitle: 那昰緬邈旳熙來攘往，車與船於情亦感。
 
 services:
     # Change it to your Disqus shortname before using
@@ -60,7 +60,7 @@ params:
 
     sidebar:
         emoji: 🐺
-        subtitle: 那是缅邈的熙來攘往，車與船于情亦感。
+        subtitle: 那昰緬邈旳熙來攘往，車與船於情亦感。
         avatar:
             enabled: true
             local: true
@@ -213,13 +213,13 @@ menu:
     social:
         - identifier: github
           name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
+          url: https://github.com/Chiloven945
           params:
               icon: brand-github
 
         - identifier: twitter
-          name: Twitter
-          url: https://twitter.com
+          name: X (Twitter)
+          url: https://x.com/chiloven945/
           params:
               icon: brand-twitter
 
