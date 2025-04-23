@@ -1,7 +1,8 @@
 <style>
+  /* 简体中文字体 */
   @font-face {
     font-family: "HarmonyOS Sans SC";
-    src: url('{{ (resources.Get "fonts/HarmonyOSSansSC-Medium.woff2").Permalink }}')
+    src: url('{{ (resources.Get "fonts/HarmonyOS-Sans-SC-Regular.woff2").Permalink }}')
       format("woff2");
     font-weight: normal;
     font-style: normal;
@@ -9,7 +10,7 @@
 
   @font-face {
     font-family: "HarmonyOS Sans SC";
-    src: url('{{ (resources.Get "fonts/HarmonyOSSansSC-Medium-Italic.woff2").Permalink }}')
+    src: url('{{ (resources.Get "fonts/HarmonyOS-Sans-SC-Regular-Italic.woff2").Permalink }}')
       format("woff2");
     font-weight: normal;
     font-style: italic;
@@ -17,7 +18,7 @@
 
   @font-face {
     font-family: "HarmonyOS Sans SC";
-    src: url('{{ (resources.Get "fonts/HarmonyOSSansSC-Bold.woff2").Permalink }}')
+    src: url('{{ (resources.Get "fonts/HarmonyOS-Sans-SC-Bold.woff2").Permalink }}')
       format("woff2");
     font-weight: bold;
     font-style: normal;
@@ -25,12 +26,48 @@
 
   @font-face {
     font-family: "HarmonyOS Sans SC";
-    src: url('{{ (resources.Get "fonts/HarmonyOSSansSC-Bold-Italic.woff2").Permalink }}')
+    src: url('{{ (resources.Get "fonts/HarmonyOS-Sans-SC-Bold-Italic.woff2").Permalink }}')
       format("woff2");
     font-weight: bold;
     font-style: italic;
   }
 
+  /* 繁体中文字体 */
+  @font-face {
+    font-family: "HarmonyOS Sans TC";
+    src: url('{{ (resources.Get "fonts/HarmonyOS-Sans-TC-Regular.woff2").Permalink }}')
+      format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "HarmonyOS Sans TC";
+    src: url('{{ (resources.Get "fonts/HarmonyOS-Sans-TC-Regular-Italic.woff2").Permalink }}')
+      format("woff2");
+    font-weight: normal;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "HarmonyOS Sans TC";
+    src: url('{{ (resources.Get "fonts/HarmonyOS-Sans-TC-Bold.woff2").Permalink }}')
+      format("woff2");
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "HarmonyOS Sans TC";
+    src: url('{{ (resources.Get "fonts/HarmonyOS-Sans-TC-Bold-Italic.woff2").Permalink }}')
+      format("woff2");
+    font-weight: bold;
+    font-style: italic;
+  }
+</style>
+
+{{ if eq .Site.Language.Lang "zh-tw" }}
+<style>
   body,
   p,
   h1,
@@ -40,9 +77,29 @@
   h5,
   h6,
   a {
-    font-family: "HarmonyOS Sans SC", sans-serif; /* 应用自定义字体，备选字体为sans-serif */
+    font-family: "HarmonyOS Sans TC", "HarmonyOS Sans SC", system-ui,
+      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+      Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
-
+</style>
+{{ else }}
+<style>
+  body,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a {
+    font-family: "HarmonyOS Sans SC", system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+      "Open Sans", "Helvetica Neue", sans-serif;
+  }
+</style>
+{{ end }}
+<style>
   .background {
     position: fixed;
     top: 0;
@@ -63,16 +120,19 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.7); /* Default to light overlay */
+    background: rgba(255, 255, 255, 0.7);
     z-index: -1;
   }
 
-  /* Dark mode specific styles */
-  @media (prefers-color-scheme: dark) {
-    .background::after {
-      background: rgba(0, 0, 0, 0.4); /* Dark overlay for dark mode */
-    }
-  }
+
+html[data-scheme="dark"] .background::after {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+html[data-scheme="light"] .background::after {
+  background: rgba(255, 255, 255, 0.5);
+}
+
 </style>
 
 <div class="background"></div>
