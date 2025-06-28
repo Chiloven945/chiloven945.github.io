@@ -9,8 +9,7 @@ menu:
 
 <h3>幻想慘死於現實麾下，愛昰墓誌銘。</h3>
 
-> Listening: [Citrus Sea - Arashi_Fish](https://music.163.com/#/song?id=2038173219)
-> <iframe frameborder="no" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=2038173219&auto=1&height=66"></iframe>
+> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0qbtkkQOlo1xo8Z0Mhuzw2?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 <h3>你可以称我为……</h3>
 
