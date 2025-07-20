@@ -1,6 +1,10 @@
 ---
 title: 友情連結
 links:
+  - title: WolFric
+    description: 可愛的狼狼~
+    website: https://wolfric.cn/
+    image: wolfric.jpg
   - title: localsauce
     description: 都給我去看山雨欲來風滿樓口牙！！！
     website: https://www.pixiv.net/users/49092680
