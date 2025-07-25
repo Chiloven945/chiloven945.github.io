@@ -6,6 +6,7 @@ license: Chiloven945. All Rights Reserved.
 slug: lambda-intro
 categories:
     - Lambda
+    - R-18
 tags:
     - R-18
     - 戀愛

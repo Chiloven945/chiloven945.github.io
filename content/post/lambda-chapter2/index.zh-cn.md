@@ -8,6 +8,7 @@ license: Chiloven945. All Rights Reserved.
 slug: lambda-chapter2
 categories:
     - Lambda
+    - R-18
 tags:
     - R-18
     - 恋爱
