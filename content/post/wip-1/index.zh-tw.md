@@ -1,5 +1,5 @@
 ---
-title: [WIP] 灰燼紀元
+title: '[WIP] 灰燼紀元'
 description: 還在寫（
 date: 2025-07-25
 license: Chiloven945. All Rights Reserved.

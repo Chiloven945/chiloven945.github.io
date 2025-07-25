@@ -1,5 +1,5 @@
 ---
-title: [WIP] 無標題
+title: '[WIP] 無標題'
 description: 還在寫，是之前《Extra 2》的兩小隻的事情，計劃給這兩小隻寫一個系列的，這差不多算得上是日後談啦
 date: 2025-07-25
 license: Chiloven945. All Rights Reserved.
