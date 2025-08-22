@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Redirecting…</title>
+    <script>
+      (function () {
+        var targetOrigin = "https://chiloven.pages.dev";
+        var path = window.location.pathname;
+        var search = window.location.search || "";
+        var hash = window.location.hash || "";
+        var url = targetOrigin + path + search + hash;
+        window.location.replace(url);
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>
+      If you are not redirected automatically, please click
+      <a id="fallback" href="https://chiloven.pages.dev">here</a>.
+      <script>
+        document.getElementById("fallback").href =
+          "https://chiloven.pages.dev" +
+          (window.location.pathname || "") +
+          (window.location.search || "") +
+          (window.location.hash || "");
+      </script>
+    </noscript>
+  </body>
+</html>
